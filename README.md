@@ -160,8 +160,13 @@ opening a pull request. GitHub Actions caught it automatically:
 
 
 
-\*(See `assets/` for screenshots of a passing run and the blocked pull request.)\*
+**The pipeline passing on a normal push (green):**
 
+![CI passing](assets/ci-passing.png)
+
+**The pipeline blocking a change that introduced a hallucination (red):**
+
+![CI blocked pull request](assets/ci-blocked-pr.png)
 
 
 \## Metrics \& Thresholds
