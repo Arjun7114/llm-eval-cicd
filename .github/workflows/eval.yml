@@ -1,0 +1,40 @@
+# .github/workflows/eval.yml
+# Runs the LLM evaluation and quality gate automatically on every push.
+# If the quality gate fails (non-zero exit), this whole check fails and
+# shows a red X on the commit — the merge-blocking signal.
+
+name: LLM Evaluation
+
+# When to run: on every push, and on every pull request to main.
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest   # a fresh Linux machine in GitHub's cloud
+
+    steps:
+      # 1. Get your code onto the machine.
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      # 2. Install Python.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Install dependencies from requirements.txt.
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run the evaluation (mock mode by default — no Ollama needed).
+      - name: Run evaluation
+        run: python evaluate.py
+
+      # 5. Run the quality gate. If it exits 1, this step fails and the
+      #    whole workflow is marked failed.
+      - name: Run quality gate
+        run: python quality_gate.py
