@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "How many days per week can employees work remotely?",
+    "answerable": true,
+    "expected_keywords": ["three", "3"]
+  },
+  {
+    "id": 2,
+    "question": "How much is the home office stipend?",
+    "answerable": true,
+    "expected_keywords": ["500"]
+  },
+  {
+    "id": 3,
+    "question": "Within how many days must the stipend be claimed?",
+    "answerable": true,
+    "expected_keywords": ["90"]
+  },
+  {
+    "id": 4,
+    "question": "What hours must remote employees be available?",
+    "answerable": true,
+    "expected_keywords": ["10", "4"]
+  },
+  {
+    "id": 5,
+    "question": "What must employees use to access internal systems remotely?",
+    "answerable": true,
+    "expected_keywords": ["VPN"]
+  },
+  {
+    "id": 6,
+    "question": "What security feature must laptops have before remote work?",
+    "answerable": true,
+    "expected_keywords": ["encryption", "full-disk"]
+  },
+  {
+    "id": 7,
+    "question": "What is the CEO's annual salary?",
+    "answerable": false,
+    "expected_keywords": []
+  },
+  {
+    "id": 8,
+    "question": "What is the parental leave policy?",
+    "answerable": false,
+    "expected_keywords": []
+  },
+  {
+    "id": 9,
+    "question": "How many paid vacation days do employees get?",
+    "answerable": false,
+    "expected_keywords": []
+  },
+  {
+    "id": 10,
+    "question": "What is Acme Corp's stock price?",
+    "answerable": false,
+    "expected_keywords": []
+  }
+]
