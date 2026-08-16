@@ -1,0 +1,7 @@
+{
+  "accuracy": 90.0,
+  "hallucination_rate": 25.0,
+  "avg_latency_ms": 0.0,
+  "total_questions": 10,
+  "passed": 9
+}
