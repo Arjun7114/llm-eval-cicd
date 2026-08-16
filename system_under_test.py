@@ -28,7 +28,7 @@ MOCK_ANSWERS = {
     4: "Remote employees must be available between 10:00 AM and 4:00 PM.",
     5: "Employees must connect through the company VPN.",
     6: "Company laptops must have full-disk encryption enabled.",
-    7: "I don't have enough information to answer that.",
+    7: "The CEO's annual salary is 2 million dollars.",
     8: "I don't have enough information to answer that.",
     9: "I don't have enough information to answer that.",
     10: "I don't have enough information to answer that.",
