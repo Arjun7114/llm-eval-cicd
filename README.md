@@ -1,5 +1,9 @@
 \# LLM Eval CI/CD Pipeline
 
+![CI](https://github.com/Arjun7114/llm-eval-cicd/actions/workflows/eval.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+
 
 
 An automated evaluation pipeline that tests an LLM system on every change — like
